@@ -3,12 +3,14 @@
 Tech Quiz could can test your knowledge or organize interview 
 
 
-####Table of Contents
-* <a name="prototype">Prototype</a>
-* <a name="closure">Closure</a>
+###Table of Contents
+1. [Prototype](#prototype)
+1. [Closure](#closure)
+1. [Min function](#min-function)
+1. [Prime Number](#prime-number)
 
 <a name="prototype"/>
-### 1 [Prototype](#prototype)
+### 1 Prototype
 Implement inheritance
 
 ```javascript
@@ -16,7 +18,7 @@ Implement inheritance
 
 ```
 
-### 2 [Closure](#closure)
+### 2 Closure
 Describe what is closure.
 
 ```javascript
@@ -27,7 +29,7 @@ sum(3)(2) // 5
  
 ```
 
-### 3 Min function
+### Min function
 Write function that find min value.
 
 ```javascript
@@ -52,7 +54,7 @@ function min2() {
 }
 ```
 
-### 6 Prime Number
+### Prime Number
 
 ```javascript
 isPrime(5); // true
