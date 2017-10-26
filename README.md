@@ -10,7 +10,7 @@ Tech Quiz could can test your knowledge or organize interview
 1. [Prime Number](#prime-number)
 
 <a name="prototype"/>
-## 1 Prototype
+## Prototype
 Implement inheritance
 
 ```javascript
@@ -19,7 +19,7 @@ Implement inheritance
 ```
 
 <a name="closure"/>
-## 2 Closure
+## Closure
 Describe what is closure.
 
 ```javascript
@@ -31,7 +31,7 @@ sum(3)(2) // 5
 ```
 
 <a name="min-value"/>
-## 3 Min value
+## Min value
 Write function that find min value.
 
 ```javascript
