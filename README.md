@@ -15,9 +15,38 @@ Tech Quiz could can test your knowledge or organize interview
 
 Implement inheritance
 
-```javascript
-    
+```
+   horse.legs // 4
+   unicorn.legs // 4
+   unicorn.corn // 1;
+```
 
+
+
+Possible answer:
+```javascript
+    function horse( ) { this.legs = 4 };
+    function unicorn() { this.corn = 1; }
+    
+    unicorn.prototype = new car();
+```
+
+Another possible answer:
+```javascript
+    class horse {
+      constructor(legs = 4){
+        this.legs = legs;
+      }
+    }
+    
+    class unicorn extends horse{
+      constructor(legs, corn = 1){
+        super(legs);
+        this.corn = corn;
+      }
+    }
+    
+    unic = new unicorn();
 ```
 
 <a name="closure"/>
@@ -26,12 +55,21 @@ Implement inheritance
 
 Describe what is closure.
 
-```javascript
+```
 const sum = () => { ... };
 
 sum(1)(2) // 3
 sum(3)(2) // 5   
  
+```
+
+Possible answer:
+```javascript
+const sum = (a) => {
+    return (b) => {
+        return a + b;
+    }
+}
 ```
 
 <a name="min-value"/>
@@ -40,7 +78,7 @@ sum(3)(2) // 5
 
 Write function that find min value.
 
-```javascript
+```
 const min = ()=>{ ... };
 
 min(2, 2) == 2;     // true
@@ -51,13 +89,13 @@ min(1, 3) == 3;     // false
 
 Possible answer:
 ```javascript
-function min() {
+const min = () => {
   x = [...arguments];
   x.sort((a,b)=>a>b);
   return x[0];
 }
 
-function min2() {
+const min2= () =>{
   return Math.min(...arguments)
 }
 ```
@@ -66,7 +104,23 @@ function min2() {
 
 ## Prime Number
 
-```javascript
+```
+isPrime(1); // true
 isPrime(5); // true
 isPrime(6); // false
+isPrime(9); // false
+```
+
+Possible answer:
+```javascript
+const isPrime = (x) => {
+  
+  for(let i= x-1; i > 1; i--) {
+    if(x%i === 0){
+      return false;
+    };
+  }
+  
+  return true
+}
 ```
