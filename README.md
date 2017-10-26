@@ -35,7 +35,9 @@ sum(3)(2) // 5
 ```
 
 <a name="min-value"/>
+
 ## Min value
+
 Write function that find min value.
 
 ```javascript
@@ -48,7 +50,7 @@ min(1, 3) == 3;     // false
 ```
 
 Possible answer:
-```
+```javascript
 function min() {
   x = [...arguments];
   x.sort((a,b)=>a>b);
@@ -61,6 +63,7 @@ function min2() {
 ```
 
 <a name="prime-number"/>
+
 ## Prime Number
 
 ```javascript
