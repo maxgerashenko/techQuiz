@@ -11,12 +11,12 @@ Tech Quiz could can test your knowledge or organize interview
 
 <a name="prototype"/>
 
-## Prototype
+## 1. Prototype
 
 Implement inheritance
 
 ```
-   horse.legs // 4
+   horse.legs   // 4
    unicorn.legs // 4
    unicorn.corn // 1;
 ```
@@ -51,7 +51,7 @@ Another possible answer:
 
 <a name="closure"/>
 
-## Closure
+## 2. Closure
 
 Describe what is closure.
 
@@ -74,7 +74,7 @@ const sum = (a) => {
 
 <a name="min-value"/>
 
-## Min value
+## 3. Min value
 
 Write function that find min value.
 
@@ -102,7 +102,7 @@ const min2= () =>{
 
 <a name="prime-number"/>
 
-## Prime Number
+## 4. Prime Number
 
 ```
 isPrime(1); // true
