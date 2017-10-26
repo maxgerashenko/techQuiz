@@ -10,7 +10,9 @@ Tech Quiz could can test your knowledge or organize interview
 1. [Prime Number](#prime-number)
 
 <a name="prototype"/>
+
 ## Prototype
+
 Implement inheritance
 
 ```javascript
@@ -19,7 +21,9 @@ Implement inheritance
 ```
 
 <a name="closure"/>
+
 ## Closure
+
 Describe what is closure.
 
 ```javascript
