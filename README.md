@@ -8,6 +8,7 @@ Tech Quiz could can test your knowledge or organize interview
 1. [Closure](#closure)
 1. [Min function](#min-value)
 1. [Prime Number](#prime-number)
+1. [Reverse Number](#reverse-number)
 
 <a name="prototype"/>
 
@@ -28,7 +29,7 @@ Possible answer:
     function horse( ) { this.legs = 4 };
     function unicorn() { this.corn = 1; }
     
-    unicorn.prototype = new car();
+    unicorn.prototype = new horse();
 ```
 
 Another possible answer:
@@ -104,6 +105,7 @@ const min2= () =>{
 
 ## 4. Prime Number
 
+Write function that define is number prime.
 ```
 isPrime(1); // true
 isPrime(5); // true
@@ -123,4 +125,41 @@ const isPrime = (x) => {
   
   return true
 }
+```
+
+<a name="reverse-number"/>
+
+## 1. Reverse number 
+
+Write function to reverse digits in number.
+```
+const x = 12345;
+
+revers(x) // 54321
+
+```
+
+Possible answer:
+```javascript
+
+fucntion revers(x) {
+    x = '' + x;
+    x = x.split('').reverse().join('');
+    
+    return Number(x);
+    // or parseInt(x);
+}
+
+```
+
+## 1. text 
+
+Write .
+```
+
+```
+
+Possible answer:
+```javascript
+
 ```
