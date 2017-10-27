@@ -9,6 +9,7 @@ Tech Quiz could can test your knowledge or organize interview
 1. [Min function](#min-value)
 1. [Prime Number](#prime-number)
 1. [Reverse Number](#reverse-number)
+1. [Palindrome](#palindrome)
 
 <a name="prototype"/>
 
@@ -133,24 +134,65 @@ const isPrime = (x) => {
 
 Write function to reverse digits in number.
 ```
-const x = 12345;
+const number = 12345;
 
-revers(x) // 54321
+reverse(number) // 54321
 
 ```
 
 Possible answer:
 ```javascript
 
-fucntion revers(x) {
-    x = '' + x;
-    x = x.split('').reverse().join('');
+fucntion reverse(number) {
+    number = '' + number;
+    number = number.split('').reverse().join('');
     
-    return Number(x);
+    return Number(number);
     // or parseInt(x);
 }
 
 ```
+
+<a name="palindrome"/>
+
+## 1. Palindrome 
+
+Write function that define is text.
+```
+isPalindrome('never odd or even') // true
+```
+
+Possible answer:
+```javascript
+function isPalindrome (text){
+  let result = true;
+  text = text.replace(/ /g,'');
+  for(let i=0; i <= ~~(text.length / 2); i++){
+    if(text[i] !== text[text.length - 1 - i]){
+       result = false;
+     }
+  }
+  return result;
+}
+```
+
+function isPalindrome (text){
+  let is = true;
+  text = text.replace(/ /g,'')
+  for(let i=0; i <= ~~(text.length/2); i++){
+    console.log(text[i]);
+    console.log(text[text.length-1 - i]);
+    if(text[i] !== text[text.length-1 - i]){
+       is = false;
+     }
+  }
+  return is;
+}
+
+
+console.log(isPalindrome('never odd or even'))
+
+
 
 ## 1. text 
 
