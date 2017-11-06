@@ -130,7 +130,7 @@ const isPrime = (x) => {
 
 <a name="reverse-number"/>
 
-## 1. Reverse number 
+## 5. Reverse number 
 
 Write function to reverse digits in number.
 ```
@@ -155,7 +155,7 @@ fucntion reverse(number) {
 
 <a name="palindrome"/>
 
-## 1. Palindrome 
+## 6. Palindrome 
 
 Write function that define is text.
 ```
@@ -173,25 +173,34 @@ function isPalindrome (text){
      }
   }
   return result;
-}
+
 ```
 
-function isPalindrome (text){
-  let is = true;
-  text = text.replace(/ /g,'')
-  for(let i=0; i <= ~~(text.length/2); i++){
-    console.log(text[i]);
-    console.log(text[text.length-1 - i]);
-    if(text[i] !== text[text.length-1 - i]){
-       is = false;
-     }
-  }
-  return is;
+## 7. text 
+
+Change array in distinct order expect 0 value
+```
+let array =[0,2,4,5,6,73,54,0,2,0,]
+
+customSort(array);
+// [0, 0, 0, 73, 54, 6, 5, 4, 2, 2]
+
+```
+
+Possible answer:
+```javascript
+
+array = [0,2,4,5,6,73,54,0,2,0,];
+
+function customSort(array){
+    return array
+      .sort( (a,b) => a-b)
+      .sort( (a,b) =>  a === 0)
+      .reverse()
 }
 
-
-console.log(isPalindrome('never odd or even'))
-
+console.log(array);
+```
 
 
 ## 1. text 
