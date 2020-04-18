@@ -1,6 +1,6 @@
 # TechQuiz
 
-Tech Quiz could can test your knowledge or organize interview 
+Tech Quiz could test your knowledge or organize interview 
 
 
 ## Table of Contents
